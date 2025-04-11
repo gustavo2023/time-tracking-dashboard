@@ -221,11 +221,11 @@ main {
 
 .activity-icon {
   position: absolute;
-  top: -1rem;
-  left: 70%;
+  top: -0.5rem;
+  left: 71%;
   z-index: 1;
   width: 4.875rem;
-  height: 4.875rem;
+  height: auto;
   flex-shrink: 0;
 }
 
