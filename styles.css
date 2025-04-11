@@ -127,6 +127,8 @@ body {
 }
 
 main {
+  width: 100%;
+  max-width: 69.75rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--spacing-300);
@@ -145,7 +147,9 @@ main {
 }
 
 .user-info {
+  width: 100%;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   background-color: var(--purple-600);
   border-radius: 0.9375rem;
