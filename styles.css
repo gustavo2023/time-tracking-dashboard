@@ -188,13 +188,13 @@ main {
 .buttons-container {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  gap: var(--spacing-300);
   margin-bottom: 1.56rem;
 }
 
 .filter-btn {
+  width: 6.8125rem;
   font: var(--text-preset-5-regular);
   color: var(--purple-500);
   background-color: transparent;
