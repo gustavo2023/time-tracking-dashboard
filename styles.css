@@ -138,6 +138,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: var(--spacing-300);
   border-radius: 0.9375rem;
   overflow: hidden;
   background-color: var(--navy-900);
@@ -153,8 +154,8 @@ main {
 }
 
 .img-container {
-  width: 5rem;
-  height: 5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   border-radius: 50%;
   overflow: hidden;
   border: 0.1875rem solid white;
@@ -182,4 +183,24 @@ main {
 .user-name {
   color: white;
   font: var(--text-preset-4);
+}
+
+.buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: var(--spacing-300);
+  margin-bottom: 1.56rem;
+}
+
+.filter-btn {
+  font: var(--text-preset-5-regular);
+  color: var(--purple-500);
+  background-color: transparent;
+  border: none;
+}
+
+.active {
+  color: white;
 }
