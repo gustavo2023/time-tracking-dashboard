@@ -121,7 +121,7 @@ body {
   background-color: var(--navy-950);
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   padding: 81px 24px;
 }
@@ -215,6 +215,7 @@ main {
   position: relative;
   border-radius: 0.9375rem;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .activity-icon {
@@ -294,7 +295,7 @@ h2 {
   background-color: var(--yellow-300);
 }
 
-@media (min-width: 28rem) and (max-width: 48rem) {
+@media (min-width: 40rem) and (max-width: 58rem) {
   body {
     justify-content: center;
   }
@@ -340,6 +341,7 @@ h2 {
 
   .data-section {
     gap: var(--spacing-200);
+    height: 100%;
   }
 
   .data-box {
@@ -353,7 +355,7 @@ h2 {
   }
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 58rem) {
   body {
     justify-content: center;
   }
@@ -361,6 +363,7 @@ h2 {
     grid-template-areas:
       "user-card activity-card-one activity-card-two activity-card-three"
       "user-card activity-card-four activity-card-five activity-card-six";
+      gap: var(--spacing-400);
   }
 
   .user-card {
@@ -414,6 +417,12 @@ h2 {
 
   .activity-card.self-care {
     grid-area: activity-card-six;
+  }
+
+  .data-section {
+    gap: var(--spacing-300);
+    padding: var(--spacing-400);
+    height: 100%;
   }
 
   .data-box {
