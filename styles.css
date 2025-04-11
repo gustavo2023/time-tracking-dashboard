@@ -208,3 +208,89 @@ main {
 .active {
   color: white;
 }
+
+.activity-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+}
+
+.activity-icon {
+  position: absolute;
+  top: -1rem;
+  left: 70%;
+  z-index: 1;
+  width: 4.875rem;
+  height: 4.875rem;
+  flex-shrink: 0;
+}
+
+.data-section {
+  margin-top: 2.38rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-100);
+  padding: var(--spacing-300);
+  border-radius: 0.9375rem;
+  background-color: var(--navy-900);
+  z-index: 1000;
+}
+
+.activity-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity {
+  color: white;
+  font: var(--text-preset-5-medium);
+}
+.data-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  color: white;
+  font: var(--text-preset-3);
+}
+
+.time-data {
+  color: var(--navy-200);
+  font: var(--text-preset-6);
+}
+
+.activity-card.work {
+  background-color: var(--orange-300);
+}
+
+.activity-card.play {
+  background-color: var(--blue-300);
+}
+
+.activity-card.study {
+  background-color: var(--pink-400);
+}
+
+.activity-card.exercise {
+  background-color: var(--green-400);
+}
+
+.activity-card.social {
+  background-color: var(--purple-700);
+}
+
+.activity-card.self-care {
+  background-color: var(--yellow-300);
+}
