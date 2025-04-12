@@ -51,4 +51,7 @@ fetch("./data.json")
         populateDOM(data, filter);
       });
     });
+  })
+  .catch((error) => {
+    console.error("Error fetching data:", error);
   });
