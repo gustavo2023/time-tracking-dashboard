@@ -41,6 +41,14 @@ fetch("./data.json")
   })
   .then((data) => {
     populateDOM(data);
-  });
 
-clearActivityCards();
+    filterBtns.forEach((btn) => {
+      const filter = btn.dataset.filter;
+      btn.addEventListener("click", () => {
+        clearActivityCards();
+        removeActivityClass();
+        btn.classList.add("active");
+        populateDOM(data, filter);
+      });
+    });
+  });
