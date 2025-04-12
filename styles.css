@@ -243,6 +243,10 @@ main {
   z-index: 1000;
 }
 
+.activity-card:hover .data-section {
+  background-color: var(--navy-800);
+}
+
 .activity-box {
   width: 100%;
   display: flex;
