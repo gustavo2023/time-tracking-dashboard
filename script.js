@@ -9,6 +9,30 @@ const clearActivityCards = () => {
   previousHoursElements.forEach((previous) => (previous.textContent = ""));
 };
 
+const removeActivityClass = () => {
+  filterBtns.forEach((btn) => btn.classList.remove("active"));
+};
+
+const populateDOM = (data, filter = "daily") => {
+  data.forEach((activity, index) => {
+    const { title, timeframes } = activity;
+    const { current, previous } = timeframes[filter];
+
+    // Assign the title to the corresponding activityText element
+    if (activityTexts[index]) {
+      activityTexts[index].textContent = title;
+    }
+
+    // Assign the current and previous hours to the corresponding elements
+    if (currentHoursElements[index]) {
+      currentHoursElements[index].textContent = `${current}hrs`;
+    }
+    if (previousHoursElements[index]) {
+      previousHoursElements[index].textContent = previous;
+    }
+  });
+};
+
 fetch("./data.json")
   .then((response) => {
     if (!response.ok) return console.error("Failed to fetch data.json");
@@ -16,7 +40,7 @@ fetch("./data.json")
     return response.json();
   })
   .then((data) => {
-    populateDOM(data); // TODO: Populate DOM with data
+    populateDOM(data);
   });
 
 clearActivityCards();
