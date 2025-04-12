@@ -363,7 +363,7 @@ h2 {
     grid-template-areas:
       "user-card activity-card-one activity-card-two activity-card-three"
       "user-card activity-card-four activity-card-five activity-card-six";
-      gap: var(--spacing-400);
+    gap: var(--spacing-400);
   }
 
   .user-card {
@@ -393,6 +393,10 @@ h2 {
   .filter-btn {
     width: 100%;
     text-align: left;
+  }
+
+  .activity-card {
+    width: 15.9375rem;
   }
 
   .activity-card.work {
