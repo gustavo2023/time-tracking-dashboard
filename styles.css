@@ -266,7 +266,7 @@ main {
   align-items: center;
 }
 
-h2 {
+.current-hours {
   color: white;
   font: var(--text-preset-3);
 }
@@ -355,7 +355,7 @@ h2 {
     gap: var(--spacing-100);
   }
 
-  h2 {
+  .current-hours {
     font: var(--text-preset-1);
   }
 }
@@ -440,7 +440,7 @@ h2 {
     gap: var(--spacing-100);
   }
 
-  h2 {
+  .current-hours {
     font: var(--text-preset-1);
   }
 }
