@@ -122,7 +122,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 81px 24px;
+  justify-content: center;
+  height: fit-content;
+  padding: 90px 24px;
 }
 
 main {
@@ -294,7 +296,7 @@ h2 {
   background-color: var(--yellow-300);
 }
 
-@media (min-width: 40rem) and (max-width: 58rem) {
+@media (min-width: 40rem) and (max-width: 71rem) {
   body {
     justify-content: center;
   }
@@ -354,7 +356,7 @@ h2 {
   }
 }
 
-@media (min-width: 58rem) {
+@media (min-width: 71rem) {
   body {
     justify-content: center;
   }
